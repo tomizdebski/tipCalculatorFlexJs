@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="calculator">
+      
+      <div class="calculator__input">
+
+        <label class="calculator__input-bill-label label" for="input-bill">Bill</label>
+        <input class="calculator__input-bill" type="text" name="input-bill" id="">
+
+        <label for="" class="calculator__select-tip-label label">Select Tip %</label>
+        
+        <input type="button" value="5%" class="calculator__input-tip-btn">
+        <input type="button" value="10%" class="calculator__input-tip-btn">
+        <input type="button" value="15%" class="calculator__input-tip-btn">
+        <input type="button" value="25%" class="calculator__input-tip-btn">
+        <input type="button" value="50%" class="calculator__input-tip-btn">
+        <input type="text" value="" class="calculator__input-tip-btn " placeholder="">
+
+        <label for="" class="calculator__num-people-input-label label">Number of People</label>
+        <input type="text" class="calculator__num-people-input ">
+        
+      </div>
+
+      <div class="calculator__output">
+        <div class="calculator__label-output label">Tip Amount <br><span class="calculator__text-color">/ person</span></div>
+        <div class="calculator__result-amount">$0.00</div>
+        <div class="calculator__label-output label">Total <br><span class="calculator__text-color">/ person</span></div>
+        <div class="calculator__result-total">$0.00</div>
+        <button class="calculator__button-reset">RESET</button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

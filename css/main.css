@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+body {
+  background-color: black;
+  font-size: 24px;
+  font-family: Space Mono;
+}
+
+h1 {
+  text-justify: auto;
+}
+
+.container {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  font-size: 0.8rem;
+}
+
+.calculator {
+  background: hsl(0, 0%, 100%);
+  margin-top: 20%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  border-radius: 1em;
+  width: 800px;
+  height: 400px;
+}
+.calculator__input {
+  display: grid;
+  gap: 5px;
+  padding: 0;
+  margin: 30px;
+  flex-basis: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+}
+.calculator__output {
+  flex-basis: 100%;
+  display: grid;
+  padding: 5%;
+  background: hsl(183, 100%, 15%);
+  margin: 30px;
+  border-radius: 5%;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+.calculator__result-amount {
+  font-size: 36px;
+  color: hsl(172, 67%, 45%);
+  justify-self: end;
+}
+.calculator__result-total {
+  font-size: 36px;
+  color: hsl(172, 67%, 45%);
+  justify-self: end;
+}
+.calculator__label-output {
+  color: hsl(0, 0%, 100%);
+  align-self: center;
+}
+.calculator__button-reset {
+  background: hsl(185, 41%, 84%);
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  cursor: grabbing;
+  grid-area: 3/1/4/3;
+  justify-self: stretch;
+  align-self: self-end;
+  height: 2.5em;
+}
+.calculator__input-bill {
+  border: solid hsl(172, 67%, 45%);
+  border-radius: 3px;
+  grid-area: 2/1/3/4;
+  cursor: grabbing;
+}
+.calculator__input-bill-label {
+  grid-area: 1/1/2/4;
+  align-self: self-end;
+}
+.calculator__select-tip-label {
+  grid-area: 3/1/4/4;
+  align-self: self-end;
+}
+.calculator__num-people-input {
+  border: solid hsl(172, 67%, 45%);
+  border-radius: 3px;
+  grid-area: 7/1/8/4;
+  cursor: grabbing;
+}
+.calculator__num-people-input-label {
+  grid-area: 6/1/7/4;
+  align-self: self-end;
+}
+.calculator__input-tip-btn {
+  width: 90px;
+  background: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-family: Space Mono;
+  border-radius: 5px;
+  cursor: grabbing;
+}
+.calculator__input-tip-btn:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+span {
+  color: hsl(186, 14%, 43%);
+}/*# sourceMappingURL=main.css.map */
