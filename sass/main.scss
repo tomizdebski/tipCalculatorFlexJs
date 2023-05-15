@@ -24,6 +24,19 @@ h1 {
     text-justify: auto;
 }
 
+@media (max-width: 375px) {
+    .container { 
+      width: 375px;
+      height: 100vh;
+      display: flex;
+
+    }
+    .calculator {
+        flex-direction: column;
+        height: 700px;
+        
+    }
+  }
 .container {
     background-color: $lightGrayishCyan;
     display: flex;
@@ -83,7 +96,7 @@ h1 {
     }
 
     &__button-reset {
-        background: $lightGrayishCyan;
+        background: $strongCyan;
         border-radius: 5px;
         letter-spacing: 1px;
         font-weight: 700;
@@ -95,10 +108,14 @@ h1 {
 
     }
     &__input-bill {
-        border: solid $strongCyan;
+        background: $lightGrayishCyan;
+        border:none;
         border-radius: 3px;
         grid-area:2/1/3/4;
         cursor: grabbing;
+        &:hover {
+            border: solid $strongCyan;
+        }
     }
     &__input-bill-label {
         grid-area: 1/1/2/4;
@@ -110,10 +127,14 @@ h1 {
     }
 
     &__num-people-input {
-        border: solid $strongCyan;
+        background: $lightGrayishCyan;
+        border: none;
         border-radius: 3px;
         grid-area:7/1/8/4;
         cursor:grabbing;
+        &:hover {
+            border: solid $strongCyan;
+        }
         
     }
 
@@ -128,6 +149,7 @@ h1 {
         font-family: $family;
         border-radius: 5px;
         cursor: grabbing;
+        text-align: center;
         
         &:hover {
             background: $lightGrayishCyan;
