@@ -16,10 +16,12 @@ buttonPercent.forEach((el) =>
     numOfPeople = document.querySelector(".calculator__num-people-input").value;
     if( !isNaN(+tipPercent)) tipPercent+= "%";
 
-    tipAmount.innerText =
-      "$" + (+bill * (+tipPercent.slice(0, -1) / 100)) / +numOfPeople;
-    total.innerText =
-      "$" + (+bill + +bill * (+tipPercent.slice(0, -1) / 100)) / +numOfPeople;
+    const resultTip = (+bill * (+tipPercent.slice(0, -1) / 100)) / +numOfPeople;
+    const resultTotal = (+bill + +bill * (+tipPercent.slice(0, -1) / 100)) / +numOfPeople;
+
+    tipAmount.innerText = "$" + resultTip.toFixed(2);
+    total.innerText = "$" + resultTotal.toFixed(2);
+    
   })
 );
 
